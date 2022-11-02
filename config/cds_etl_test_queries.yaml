@@ -1,1 +1,3 @@
-STUDIES_QUERY:     '{ numberOfStudies}'  
+NUM_STUDIES_QUERY:     '{ numberOfStudies}'  
+NUM_FILES_QUERY:      '{ numberOfFiles }'
+NUM_SAMPLES_QUERY:      '{ numberOfSamples }'

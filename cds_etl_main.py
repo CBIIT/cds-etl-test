@@ -25,10 +25,15 @@ with open(queries_file) as f:
 
 try:
     # Initalize the GraphQL Processor object
+    # Testing for Navbar items first
     graphql_processor = CDSGraphQLProcessor(config)
     # Query for number of studies
-    response=graphql_processor.run_query(queries['STUDIES_QUERY'])
-    print(response)
+    total_num_studies=graphql_processor.run_query(queries['NUM_STUDIES_QUERY'])
+    # Query for number of files
+    total_num_files=graphql_processor.run_query(queries['NUM_FILES_QUERY'])
+    # Query for number of samples
+    total_num_samples=graphql_processor.run_query(queries['NUM_SAMPLES_QUERY'])
+    print(total_num_samples)
 except Exception as e:
     logging.error(e)
     sys.exit(1)
