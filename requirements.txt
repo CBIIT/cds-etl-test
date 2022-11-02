@@ -2,3 +2,5 @@ pandas
 boto3
 requests
 pyyaml
+xlrd
+openpyxl
